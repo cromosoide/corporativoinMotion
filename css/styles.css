@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f2f2;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+nav{
+    height: 70px;
+    background: #242424;
+}
+
+.nav-content{
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo_header{
+    height: 50px;
+}
+
+#sect1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 0.1px;
+}
+
+video {
+    filter: grayscale(1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.barra_logos{
+    filter: grayscale(1);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(35vh - 50px);
+}
+
+.barra_logos-img{
+    height: 4.2rem;
+    margin: 10px 20px;
+    display: flex;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.984));
+
+}
+
+.container h1 {
+    color: whitesmoke;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.arrow {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.formulario {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: #242424;
+}
+
+.input{
+    width: 100%;
+    padding: 13px;
+    font-size: 18px;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+
+textarea#mensaje.mensaje{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+
+.formulario h1{
+    color: #242424;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.enviar{
+    width: 60%;
+    /* padding: 10px; */
+    margin: 0 20%;
+    background-color: #B99560;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: #b0813b;
+}
+
+.logo_footer{
+    width: 50px;
+    margin: 20px;
+}
+
+   
+.footer {
+    padding: 20px auto;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+    
+}
+   
+.logo-footer img {
+    max-width: 100px;
+    max-height: 100px;
+}
+   
+.footer a, p{
+    font-size: .75rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: whitesmoke;
+}
