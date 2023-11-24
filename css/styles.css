@@ -50,16 +50,22 @@ video {
     filter: grayscale(1);
     margin: 20px auto;
     display: flex;
-    justify-content: center;
+    
+    align-items: center;
     margin-top: calc(35vh - 50px);
 }
 
 .barra_logos-img{
-    height: 4.2rem;
-    margin: 10px 20px;
+    height: 3.5rem;
+    margin: 10px 30px;
     display: flex;
+    justify-content: space-evenly;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.984));
 
+}
+
+.usina{
+    height: 5rem;
 }
 
 .container h1 {
