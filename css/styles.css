@@ -161,7 +161,7 @@ textarea#mensaje.mensaje{
     color: whitesmoke;
 }
 
-@media (max-width: 768px)
+@media (max-width: 769px)
 {
     .container{
         display: flex;
@@ -199,11 +199,11 @@ textarea#mensaje.mensaje{
     }
 }
 
-@media (max-width: 425px)
+@media (max-width: 426px)
 {
     .container{
         display: flex;
-        max-width: 390px;
+        max-width: 360px;
         overflow: auto;
     }
 
@@ -260,16 +260,15 @@ textarea#mensaje.mensaje{
     }
 }
 
-@media (max-width: 375px)
+@media (max-width: 376px)
 {
     .container{
-        display: flex;
-        max-width: 360px;
+        max-width: 320px;
     }
 
     .barra_logos{
         display: block;
         margin: 20px auto;
-        margin-top: 15pxpx;
+        margin-top: 10px;
     }
 }
