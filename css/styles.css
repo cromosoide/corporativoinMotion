@@ -61,7 +61,6 @@ video {
     display: flex;
     justify-content: space-evenly;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.984));
-
 }
 
 .usina{
@@ -160,4 +159,117 @@ textarea#mensaje.mensaje{
     font-weight: 300;
     text-decoration: none;
     color: whitesmoke;
+}
+
+@media (max-width: 768px)
+{
+    .container{
+        display: flex;
+        max-width: 750px;
+    }
+
+    nav{
+        height: 80px;
+    }
+
+    .nav-content{
+        justify-content: center;
+    }
+
+    #sect1 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 0.1px;
+    }
+
+    video {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .barra_logos-img{
+        height: 2.7rem;
+        margin: 10px 10px;
+    }
+
+    .usina{
+        height: 4rem;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .container{
+        display: flex;
+        max-width: 390px;
+        overflow: auto;
+    }
+
+    .container h1{
+        font-size: 2rem;
+    }
+
+    nav{
+        height: 80px;
+    }
+
+    .barra_logos{
+        display: block;
+        margin: 20px auto;
+        margin-top: 35px;
+    }
+
+    .barra_logos-img{
+        height: 2.7rem;
+        margin: 35px auto;
+        
+    }
+
+    .usina{
+        height: 5rem;
+    }
+
+    .enviar{
+        width: 100%;
+        /* padding: 10px; */
+        margin: 0;
+    }
+
+    .logo_footer{
+        display: flex;
+        width: 100px;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+       
+    .footer {
+        display: block;
+        width: 100%;
+    }
+       
+    .footer a, p{
+        display: block;
+        margin: 0 30px;
+        font-size: .9rem;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .container{
+        display: flex;
+        max-width: 360px;
+    }
+
+    .barra_logos{
+        display: block;
+        margin: 20px auto;
+        margin-top: 15pxpx;
+    }
 }
