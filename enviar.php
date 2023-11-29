@@ -1,30 +1,19 @@
 <?php
-$name = $_POST['name'];
-$mail = $_POST['mail'];
-$empresa = $_POST['empresa'];
-$pais = $_POST['pais'];
-$tipo_empresa = $_POST['tipo_empresa'];
-$industria = $_POST['industria'];
-$message = $_POST['message'];
+    $destinatario = 'contatosantiago.mar@gmail.com';
+    // Para el correo al que se enviará el mensaje
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $empresa = $_POST['empresa'];
+    $pais = $_POST['pais'];
+    $tipoempresa = $_POST['tipoempresa'];
+    $industria = $_POST['industria'];
+    $mensaje = $_POST['mensaje'];
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+    $header = "Enviado desde la página Corporativo inMotion"
+    $mensajeCompleto = $mensaje . "\nAtentamente" . $nombre;
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su e-mail es: " . $mail . " \r\n";
-$message .= "Empresa: " . $empresa . " \r\n";
-$message .= "País: " . $pais . " \r\n";
-$message .= "Tipo de empresa: " . $tipo_empresa . " \r\n";
-$message .= "Industria: " . $industria . " \r\n";
-$message .= "Mensaje: " . $_POST['message'] . " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time());
+    mail($destinatario, $industria, $mensajeCompleto, $header);
+    echo "<script>alert('Correo enviado exitosamente')</script>";
+    echo "<script> setTimeout(\"location.href='index.html'\",1000)</script>";
 
-$para = 'contactosantiago.mar@gmail.com';
-$asunto = 'Formulario de web inMotion';
-
-mail($para, $asunto, utf8_decode($message), $header);
-
-header("Location:index.html");
 ?>
