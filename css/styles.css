@@ -80,6 +80,53 @@ video {
     justify-content: center;
 }
 
+/* seccion descargar presentaciones */
+.descargar{
+    padding: 20px auto;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.descargar_btn{
+    padding: 20px;
+}
+
+.descargar_enlace{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* sección de botones de descargas */
+.enlaces_descargas{
+    display: grid;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 60px;
+    border: #242424;
+}
+
+.btn_descarga{
+    width: 100%;
+    padding: 13px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    color: whitesmoke;
+    background: #B99560;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 .formulario {
     width: 600px;
     margin: 0 auto;
@@ -145,7 +192,7 @@ textarea#mensaje.mensaje{
     background-color: #242424;
     display: flex;
     justify-content: space-evenly;
-   align-items: center;
+    align-items: center;
     
 }
    
@@ -161,7 +208,7 @@ textarea#mensaje.mensaje{
     color: whitesmoke;
 }
 
-@media (max-width: 769px)
+@media (max-width: 780px)
 {
     .container{
         display: flex;
@@ -199,7 +246,7 @@ textarea#mensaje.mensaje{
     }
 }
 
-@media (max-width: 426px)
+@media (max-width: 440px)
 {
     .container{
         display: flex;

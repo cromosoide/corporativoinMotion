@@ -7,11 +7,13 @@
     <link rel="shortcut icon" href="./assets/logo-footer.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="nearlanding.html">
+    <link rel="stylesheet" href="index.html">
 </head>
 <body>
     <nav>
         <div class="container nav-content">
-            <a href="#" class="enlaces"><img src="assets/logo-header.svg" class="logo_header"></a>
+            <a id="home" href="index.html" class="enlaces"><img src="assets/logo-header.svg" class="logo_header"></a>
         </div>
     </nav>
 
@@ -36,22 +38,37 @@
         </div>
     </section>
 
+    <!-- Sección descargar presetnaciones -->
+    <section class="descargar">
+        <div class="descargar_btn">
+            <a href="nearlanding.html" class="descargar_enlace">Descargar presentación</a>
+        </div>
+    </section>
+
 
     <section id="contacto" class="container formulario">
         
-        <form action="enviar.php" method="post">
+        <form action="/php/enviar.php" method="post">
             <h1 class="h1_contacto">CONTACTO</h1>
+
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input">
+            
             <input type="email" id="email" name="email" placeholder="Email" class="input">
+            
             <input type="text" id="empresa" name="empresa" placeholder="Empresa" class="input">
-            <input type="text" id="pais" name="pais" placeholder="País" class="input"> 
-            <input type="text" id="tipo_empresa" name="tipoempresa" placeholder="Tipo de empresa" class="input">     
+            
+            <input type="text" id="pais" name="pais" placeholder="País" class="input">
+            
+            <input type="text" id="tipo_empresa" name="tipoempresa" placeholder="Tipo de empresa" class="input">
+            
             <input type="text" id="industria" name="industria" placeholder="Industria" class="input">
+            
             <textarea id="mensaje" name="mensaje" class="mensaje" placeholder="Mensaje" class="input"></textarea>
-            <input type="submit" value="enviar" class="input enviar" href="#home">
+
+            <input type="submit" value="Enviar" class="input enviar" href="index.html">
           </form>
     </section>
-    s
+    
     <footer>
        
         <div class="footer">
